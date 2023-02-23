@@ -44,7 +44,7 @@ class DynamicEMNIST(EMNIST):
         self.color = color
         self.which_set = which_set
         self.train = (self.which_set in ["train", "valid"])
-        super(DynamicEMNIST, self).__init__(root=root, split=split, train=self.train, **kwargs)
+        super(DynamicEMNIST, self).__init__(root=root, split=split, train=self.train,download = True, **kwargs)
         self._prep_set()
         self._norm_data()
         self._color_channels()
