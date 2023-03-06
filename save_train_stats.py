@@ -178,6 +178,9 @@ def main():
     for stats_layer in learner_stats_layers:
         # print(stats_layer.maxs - stats_layer.mins)
         # print(stats_layer.m2)
+        print("Chhavi printing stats_layer.feature_ranges shape":stats_layer.feature_ranges.shape) ## checking size of stats layer
+        print("Chhavi printing stats_layer.bin_edges shape":stats_layer.bin_edges.shape) ## checking size of stats layer
+        
         print(stats_layer.feature_ranges[:, 0])
         print(stats_layer.bin_edges[:, -2] - stats_layer.bin_edges[:, 1])
 
