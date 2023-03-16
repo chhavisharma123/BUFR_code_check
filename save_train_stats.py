@@ -142,8 +142,8 @@ def main():
 
     learner_stats_layers = learner.stats_layers
     learner = learner.to(args.dev)
-    print(learner)
-    print(learner.stats_layers)
+    print('learner',learner)
+    print('learner stats layers',learner.stats_layers)
 
     # Calibrate bin range (iff using a BinStats layer) ----------------------
     if any([isinstance(stats_layer, BinStats) or isinstance(stats_layer, MomentStats)
