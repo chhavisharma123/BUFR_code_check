@@ -1,6 +1,6 @@
 ---
-epochs: 150
-val_freq: 10
+epochs: 15
+val_freq: 5
 batch_size: 256
 
 lr: 1.0e-1
