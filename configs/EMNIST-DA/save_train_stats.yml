@@ -1,5 +1,5 @@
 ---
-pretr_epochs: 150
+pretr_epochs: 15
 
 stats_layer: soft_bins
 tau: 0.01
