@@ -159,7 +159,7 @@ def main():
                 x_tr = data_tuple[0].to(args.dev)
                 _ = learner(x_tr)
         print ('Bin ranges',_)
-        print ('shape of bin ranges',_.shape())
+        print ('shape of bin ranges',_.shape)
         print("Bin ranges calibrated.")
 
     # Gather train (p) stats ------------------------------------------------
